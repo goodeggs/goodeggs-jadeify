@@ -1,0 +1,29 @@
+{
+  "name": "goodeggs-jadeify",
+  "version": "1.0.0",
+  "description": "like jadeify transform, but renders directly to a string",
+  "author": "Good Eggs <open-source@goodeggs.com>",
+  "contributors": [
+    "dannynelson <danny@goodeggs.com>"
+  ],
+  "license": "Private",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/goodeggs/goodeggs-jadeify.git"
+  },
+  "homepage": "https://github.com/goodeggs/goodeggs-jadeify",
+  "bugs": "https://github.com/goodeggs/goodeggs-jadeify/issues",
+  "dependencies": {
+    "through": "^2.3.6",
+    "jade": "^1.9.2"
+  },
+  "scripts": {
+    "compile": "coffee --bare --compile --output lib/ src/",
+    "prepublish": "npm run compile"
+  },
+  "publishConfig": {
+    "registry": "https://goodeggs.registry.nodejitsu.com/",
+    "always-auth": true
+  }
+}

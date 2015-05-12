@@ -23,7 +23,7 @@
     "prepublish": "npm run compile"
   },
   "publishConfig": {
-    "registry": "https://goodeggs.registry.nodejitsu.com/",
+    "registry": "https://registry.npmjs.org/",
     "always-auth": true
   }
 }
